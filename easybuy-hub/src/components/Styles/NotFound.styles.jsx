@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledNotFound = styled.div`
+export const StyledNotFound = styled.div`
 display:flex;
 flex-direction: column;
 

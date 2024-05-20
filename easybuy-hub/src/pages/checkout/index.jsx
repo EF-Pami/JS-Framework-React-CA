@@ -1,5 +1,5 @@
 import CartItems from "../../components/Cart";
-import { styledHeader } from "../../components/Styles/Cart.styles";
+import { StyledHeader } from "../../components/Styles/Cart.styles";
 import { useEffect } from "react";
 
 export default function Checkout() {
@@ -9,7 +9,7 @@ export default function Checkout() {
 
     return (
         <div>
-            <styledHeader>My Cart</styledHeader>
+            <StyledHeader>My Cart</StyledHeader>
             <CartItems />
         </div>
     )

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledError = styled.div`
+export const StyledError = styled.div`
 display: flex;
 justify-content:center;
 align-items:center;

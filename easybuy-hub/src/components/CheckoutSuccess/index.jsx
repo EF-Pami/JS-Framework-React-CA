@@ -8,9 +8,9 @@ export default function CheckoutMessage() {
     return (
         <StyledWrapper>
             <CheckCircle fontSize="large" style={{color: '#00C013'}}/>
-            <H1>Thanks for shopping with EasyBuy-Hub</H1>
+            <h1>Thanks for shopping with EasyBuy-Hub</h1>
             <p>Your Order number: E000B012H</p>
-            <P>Check your email for more information on order confirmation and delivery</P>
+            <p>Check your email for more information on order confirmation and delivery</p>
             <Link to="/" style={{ textDecoration: 'none'}}>
                 <button><ArrowBackIosNew />Continue Shopping</button>
             </Link>

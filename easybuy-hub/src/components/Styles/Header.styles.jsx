@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledHeader = styled.header`
+export const StyledHeader = styled.header`
 border: 0;
 background-color: ${({theme}) => theme.colors.beige};
 

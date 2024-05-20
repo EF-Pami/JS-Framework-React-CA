@@ -1,12 +1,12 @@
 import React from "react";
-import { styledError } from "../Styles/Error.styles";
+import { StyledError } from "../Styles/Error.styles";
 import { Error } from "@mui/icons-material";
 
 export default function ErrorMessage() {
     return (
-        <styledError>
+        <StyledError>
             <Error fontSize="large" />
             Error loading data, please try again
-        </styledError>
+        </StyledError>
     )
 }

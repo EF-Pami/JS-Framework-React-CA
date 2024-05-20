@@ -10,6 +10,7 @@ export default function ViewProduct ({product}) {
     const {
         id,
         title,
+        imageUrl,
         description,
         price,
         discountedPrice,
