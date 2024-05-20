@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledNav = styled.nav`
+export const StyledNav = styled.nav`
 font-family: 'Inter', sans-serif;
 margin-bottom: 20px;
 .container {

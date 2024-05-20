@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import { styledNav } from "../../Styles/Nav.styles";
+import { StyledNav } from "../../Styles/Nav.styles";
 import { NavLink } from "react-router-dom";
-import cartIcon from "../Card";
+import CartIcon from "../Card";
 import { Menu } from "@mui/material";
 
 export default function Nav() {
@@ -11,7 +11,7 @@ export default function Nav() {
         setShowNavbar(!showNavbar)
     }
     return (
-        <styledNav>
+        <StyledNav>
             <div className="container">
             <div className="logo">
             <NavLink to="/"><img src="/images/EBlogo.jpg" alt="logo"/></NavLink>
@@ -28,11 +28,11 @@ export default function Nav() {
                         <NavLink to="/contact">Contact</NavLink>
                     </li>
                     <div className="CartIcon">
-                        <NavLink to="/checkout"><cartIcon /></NavLink>
+                        <NavLink to="/checkout"><CartIcon /></NavLink>
                     </div>
                 </ul>
             </div>
             </div>
-        </styledNav>
+        </StyledNav>
     )
 }

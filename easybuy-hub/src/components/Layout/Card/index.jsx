@@ -1,7 +1,7 @@
 import { ShoppingCart } from "@mui/icons-material"
 import { useCart } from "../../../zustandHook/cartstore"
 
-export default function cartIcon() {
+export default function CartIcon() {
     const {cart} = useCart();
 
 return (
