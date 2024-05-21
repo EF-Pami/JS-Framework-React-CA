@@ -10,7 +10,7 @@ export default function ViewProduct ({product}) {
     const {
         id,
         title,
-        imageUrl,
+        image,
         description,
         price,
         discountedPrice,
@@ -34,7 +34,7 @@ return (
     <S.StyledViewProduct key={id}>
         <S.styledContainer>
             <S.StyledInfoContainer>
-                <S.styledImg src={imageUrl} alt={title} />
+                <S.styledImg src={image.url} alt={title} />
                 <S.StyledProductInfo>
                     {discount !== showDiscount && (
                         <S.CalDiscount>

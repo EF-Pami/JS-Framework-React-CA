@@ -45,6 +45,11 @@ margin-bottom: 20px;
     background-color: ${({theme}) => theme.colors.black};
 }
 
+.logo img {
+    width:250px;
+    height: auto;
+}
+
 @media (max-width 768px) {
     .nav-elements ul {
         .CartIcon {

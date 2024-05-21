@@ -22,7 +22,7 @@ export default function Home() {
                 const response = await fetch(url);
                 const json = await response.json();
 
-                setProducts(json);
+                setProducts(json.data);
             } catch(error) {
                 console.log(error);
                 setIsError(true);

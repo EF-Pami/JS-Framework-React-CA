@@ -4,17 +4,18 @@ import { Star } from "@mui/icons-material";
 import { useCart } from "../../zustandHook/cartstore";
 
 export default function ProductCart({product}) {
-    const {id, title, imageUrl, price, discountedPrice, rating} = product;
+    const {id, title, image, price, discountedPrice, rating} = product;
 
     const {addToCart} = useCart();
 
     function handleATCBtn() {
         addToCart(product);
     }
+    console.log(product);
     return (
         <S.ProductWrapper>
             <S.ProductImageContainer>
-                <S.ProductImage src={imageUrl} alt={title}></S.ProductImage>
+                <S.ProductImage src={image.url} alt={title}></S.ProductImage>
             </S.ProductImageContainer>
             <S.ProductTitle>
                 <S.ProductHeading>{title}</S.ProductHeading>
