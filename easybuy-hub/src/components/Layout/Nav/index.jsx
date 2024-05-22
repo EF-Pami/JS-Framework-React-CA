@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { StyledNav } from "../../Styles/Nav.styles";
 import { NavLink } from "react-router-dom";
 import CartIcon from "../Card";
-import { Menu } from "@mui/material";
+import { Menu } from "@mui/icons-material";
 
 export default function Nav() {
     const [showNavbar, setShowNavbar] = useState(false)
@@ -17,7 +17,7 @@ export default function Nav() {
             <NavLink to="/"><img src="/images/EBlogo.jpg" alt="logo"/></NavLink>
             </div>
             <div className="menu" onClick={handleShowNavbar}>
-                <Menu style={{color: '#5c00ff'}} fontSize="large"/>
+                <Menu style={{color: 'black'}} fontSize="large"/>
             </div>
             <div className={`nav-elements ${showNavbar && 'active'}`}>
                 <ul>

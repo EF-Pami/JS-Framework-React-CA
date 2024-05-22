@@ -15,10 +15,10 @@ export default function ProductReviews({reviews}) {
     })
 
     return (
-        <S.styledWrapper>
+        <S.StyledWrapper>
             {userReviews && userReviews.length > 0 ? (
                 userReviews
             ) : (<div>No reviews on this product yet.</div>)}
-        </S.styledWrapper>
+        </S.StyledWrapper>
     )
 }

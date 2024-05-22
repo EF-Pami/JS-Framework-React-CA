@@ -32,9 +32,9 @@ export default function ViewProduct ({product}) {
 
 return (
     <S.StyledViewProduct key={id}>
-        <S.styledContainer>
+        <S.StyledContainer>
             <S.StyledInfoContainer>
-                <S.styledImg src={image.url} alt={title} />
+                <S.StyledImg src={image} alt={title} />
                 <S.StyledProductInfo>
                     {discount !== showDiscount && (
                         <S.CalDiscount>
@@ -57,11 +57,11 @@ return (
                         <S.StyledBtn onClick={() => handleATCBtn()}>Add to Cart</S.StyledBtn>
                 </S.StyledProductInfo>
             </S.StyledInfoContainer>
-            <R.styledProductReviews>
+            <R.StyledProductReviews>
                 <h3>Reviews</h3>
                 <ProductReviews reviews={reviews} />
-            </R.styledProductReviews>
-        </S.styledContainer>
+            </R.StyledProductReviews>
+        </S.StyledContainer>
     </S.StyledViewProduct>
 )
 }

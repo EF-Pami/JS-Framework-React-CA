@@ -23,7 +23,7 @@ export default function CartItems() {
                                 <S.StyledItem key={product.id}>
                                     <S.StyledBtn onClick={() => remove(product.id)}><Clear /></S.StyledBtn>
                                     <img
-                                        src={product.image.Url}
+                                        src={product.image.url}
                                         alt={product.title}
                                     />
                                         <p>{product.title}</p>

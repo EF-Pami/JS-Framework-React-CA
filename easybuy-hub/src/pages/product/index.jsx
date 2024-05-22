@@ -20,7 +20,7 @@ export default function Product() {
                 const response = await fetch(url);
                 const json = await response.json();
 
-                setProduct(json);
+                setProduct(json.data);
             } catch(error) {
                 console.log(error);
                 setIsError(true);

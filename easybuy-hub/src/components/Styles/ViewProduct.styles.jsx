@@ -4,7 +4,7 @@ export const StyledViewProduct = styled.div`
 display: flex;
 justify-content: center;
 `
-export const styledContainer = styled(StyledViewProduct)`
+export const StyledContainer = styled(StyledViewProduct)`
 flex-direction: column;
 max-width: 100%;
 `
@@ -20,7 +20,7 @@ border-bottom: 1px solid ${({theme}) => theme.colors.black};
 }
 `
 
-export const styledImg = styled.img`
+export const StyledImg = styled.img`
 width: 300px;
 border-radius: 2rem;
 border: 1px solid white;
