@@ -17,6 +17,7 @@ form {
     border: 1px solid ${({theme}) => theme.colors.black};
     border-radius: 20px;
     padding: 2.1rem;
+    margin-bottom:20px;
 
     label {
         margin:4px 0;
@@ -45,10 +46,11 @@ form {
         height:30px;
         margin:auto;
         margin-top:10px;
-        background-color: ${({theme}) => theme.colors.black};
+        background-color: ${({theme}) => theme.colors.blue};
         color: ${({theme}) => theme.colors.white};
         border-radius: 10px;
         border: none;
+        font-weight:bold;
         cursor: pointer;
     }
 }

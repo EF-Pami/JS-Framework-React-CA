@@ -73,19 +73,20 @@ margin-bottom: 30px;
 export const StyledClearBtn = styled.button`
 margin: 5px;
 cursor: pointer;
-background-color: ${({theme}) => theme.colors.white};
-color: ${({theme}) => theme.colors.green};
+background-color: ${({theme}) => theme.colors.blue};
+color: ${({theme}) => theme.colors.white};
 border: 1px solid ${({theme}) => theme.colors.green};
 border-radius: 10px;
-width: 100px
-height: 30px;
+width: 150px;
+font-size:20px;
+height: 50px;
 `
 export const StyledCheckoutBtn = styled(StyledClearBtn)`
 background-color: ${({theme}) => theme.colors.green};
 color: ${({theme}) => theme.colors.black};
-border: none;
+border: 1px solid ${({theme}) => theme.colors.black};
 `
 export const StyledBackBtn = styled(StyledCheckoutBtn)`
-width: 140px;
+width: 150px;
 margin-top: 20px;
 `

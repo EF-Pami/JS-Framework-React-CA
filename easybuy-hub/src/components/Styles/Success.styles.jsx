@@ -9,10 +9,15 @@ button {
     display: inline-flex;
     align-items:center;
     cursor:pointer;
-    background-color: ${({theme}) => theme.colors.black};
+    background-color: ${({theme}) => theme.colors.blue};
     color: ${({theme}) => theme.colors.white};
     border: none;
     border-radius: 20px;
     height: 30px;
+    transition-duration:0.5s
+}
+
+button:hover {
+    background-color: ${({theme}) => theme.colors.red};
 }
 `

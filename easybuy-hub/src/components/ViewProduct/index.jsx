@@ -34,7 +34,12 @@ return (
     <S.StyledViewProduct key={id}>
         <S.StyledContainer>
             <S.StyledInfoContainer>
-                <S.StyledImg src={image} alt={title} />
+                {image && image.url ? (
+                    <S.StyledImg src={image.url} alt={title} />
+                ): (
+                    <div>No image available</div>
+                )}
+                 
                 <S.StyledProductInfo>
                     {discount !== showDiscount && (
                         <S.CalDiscount>

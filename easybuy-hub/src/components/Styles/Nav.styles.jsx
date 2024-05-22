@@ -26,7 +26,7 @@ margin-bottom: 20px;
 }
 
 .nav-elements ul a {
-    font-size: 25px;
+    font-size: 32px;
     text-decoration: none;
 }
 

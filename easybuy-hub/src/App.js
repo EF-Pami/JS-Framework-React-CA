@@ -15,7 +15,7 @@ const theme = {
   colors: {
     white: '#fff',
     blue: '#5c00ff',
-    bg: '#d9e4ff'
+    bg: '#d9d6ff'
   }
 }
 

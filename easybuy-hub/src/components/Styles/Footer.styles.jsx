@@ -10,6 +10,7 @@ width: 100%
 
 a {
     text-decoration: none;
+    list-style-type: none;
     color: ${({theme}) => theme.colors.blue};
     font-size:20px;
     font-weight: bold;
