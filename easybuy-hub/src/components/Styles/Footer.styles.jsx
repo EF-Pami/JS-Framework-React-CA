@@ -6,7 +6,7 @@ align-items: center;
 margin-left: 25px;
 position: fixed;
 bottom: 0;
-width: 100%
+width: 100%;
 
 a {
     text-decoration: none;

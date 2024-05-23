@@ -8,18 +8,18 @@ export default function Nav() {
     const [showNavbar, setShowNavbar] = useState(false)
 
     const handleShowNavbar = () => {
-        setShowNavbar(!showNavbar)
-    }
+        setShowNavbar(!showNavbar);
+    };
     return (
         <StyledNav>
             <div className="container">
-            <div className="logo">
-            <NavLink to="/"><img src="/images/EBlogo.jpg" alt="logo"/></NavLink>
-            </div>
+                <div className="logo">
+                    <NavLink to="/"><img src="/images/EBlogo.jpg" alt="logo"/></NavLink>
+                </div>
             <div className="menu" onClick={handleShowNavbar}>
                 <Menu style={{color: 'black'}} fontSize="large"/>
             </div>
-            <div className={`nav-elements ${showNavbar && 'active'}`}>
+            <div className={`nav-elements ${showNavbar ? 'active': ''}`}>
                 <ul>
                     <li>
                         <NavLink to="/">Home</NavLink>
@@ -27,9 +27,9 @@ export default function Nav() {
                     <li>
                         <NavLink to="/contact">Contact</NavLink>
                     </li>
-                    <div className="CartIcon">
+                    <li className="CartIcon">
                         <NavLink to="/checkout"><CartIcon /></NavLink>
-                    </div>
+                    </li>
                 </ul>
             </div>
             </div>
