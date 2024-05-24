@@ -6,6 +6,7 @@ import { Add } from "@mui/icons-material";
 import { Remove } from "@mui/icons-material";
 import { Clear } from "@mui/icons-material";
 
+
 export default function CartItems() {
     const {cart, add, decrease, remove, clearCart} = useCart();
 
@@ -71,7 +72,7 @@ export default function CartItems() {
                     <S.StyledWrapper>
                         <Link to="/">
                             <S.StyledBackBtn>
-                                Back to shopping
+                                Back to Shopping
                             </S.StyledBackBtn>
                         </Link>
                     </S.StyledWrapper>

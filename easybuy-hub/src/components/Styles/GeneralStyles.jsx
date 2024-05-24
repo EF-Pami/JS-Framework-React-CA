@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
 body {
     background: ${({theme}) => theme.colors.bg};
     margin: 0;
+    padding-top: 270px;
     font-family: 'Inter', sans-serif;
 }
 

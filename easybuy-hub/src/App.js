@@ -15,7 +15,11 @@ const theme = {
   colors: {
     white: '#fff',
     blue: '#5c00ff',
-    bg: '#d9d6ff'
+    bg: '#189AB4',
+    green: 'rgb(96, 234, 96)',
+    limegreen: '#81B622',
+    tan: 'rgb(200, 180, 140)',
+    black: 'rgb(0, 0, 0)'
   }
 }
 

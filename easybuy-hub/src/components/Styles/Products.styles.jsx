@@ -6,6 +6,7 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 padding: 0 4rem;
+margin-bottom: 80px;
 `;
 
 export const ProductWrapper = styled.div`
@@ -13,13 +14,29 @@ border: 1px solid white;
 border-radius: 2rem;
 list-style: none;
 width: 250px;
+height: 400px;
 margin: 2rem;
 box-shadow: rgba(47, 0, 255, 0.2) 0px 8px 24px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+@media (max-width: 768px) {
+    max-width: 45%;
+}
+
+@media (max-width: 480px) {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
 `;
 
 export const ProductTitle = styled.div`
 display:flex;
 justify-content: space-around;
+align-items: center;
+padding: 0 1rem;
 `;
 
 export const ProductHeading = styled.h4`
@@ -27,6 +44,7 @@ margin: 5px 10px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
+flex: 1;
 `;
 
 export const ProductImageContainer = styled.div`
@@ -71,15 +89,17 @@ border-radius: 6px;
 font-size: 16px;
 font-weight: bold;
 cursor: pointer;
+padding: 10px;
 `;
 
 export const ProductsView = styled(Link)`
-border-radius: 5px;
-border: ${({theme}) => theme.colors.green} 1px solid;
+border-radius: 6px;
+background-color: ${({theme}) => theme.colors.blue};
 padding: 2px;
-color: ${({theme}) => theme.colors.green};
+color: ${({theme}) => theme.colors.white};
 text-decoration: none;
 font-size: 16px;
 font-weight: bold;
 cursor: pointer;
+padding: 10px;
 `

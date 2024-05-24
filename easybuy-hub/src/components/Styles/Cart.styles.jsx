@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const StyledHeader = styled.h1`
 display: flex;
 justify-content: center;
+
 `
 export const StyledWrapper = styled.div`
 display: flex;
 justify-content: center;
+margin-bottom: 80px;
 `
 export const StyledContainer = styled.div`
 display: flex;
@@ -87,6 +89,11 @@ color: ${({theme}) => theme.colors.black};
 border: 1px solid ${({theme}) => theme.colors.black};
 `
 export const StyledBackBtn = styled(StyledCheckoutBtn)`
+cursor: pointer;
+background-color: ${({theme}) => theme.colors.blue};
+color: ${({theme}) => theme.colors.white};
+border: none
+border-radius: 20px;
 width: 150px;
-margin-top: 20px;
+height: 50px;
 `

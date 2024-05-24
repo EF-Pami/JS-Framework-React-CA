@@ -17,7 +17,7 @@ form {
     border: 1px solid ${({theme}) => theme.colors.black};
     border-radius: 20px;
     padding: 2.1rem;
-    margin-bottom:20px;
+    margin-bottom:80px;
 
     label {
         margin:4px 0;

@@ -7,7 +7,7 @@ import { ArrowBackIosNew } from "@mui/icons-material";
 export default function CheckoutMessage() {
     return (
         <StyledWrapper>
-            <CheckCircle fontSize="large" style={{color: '#00C013'}}/>
+            <CheckCircle fontSize="large" style={{color: 'limegreen'}}/>
             <h1>Thanks for shopping with EasyBuy-Hub</h1>
             <p>Your Order number: E000B012H</p>
             <p>Check your email for more information on order confirmation and delivery</p>

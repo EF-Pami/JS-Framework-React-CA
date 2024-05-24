@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledViewProduct = styled.div`
 display: flex;
 justify-content: center;
+margin-bottom:80px;
 `
 export const StyledContainer = styled(StyledViewProduct)`
 flex-direction: column;

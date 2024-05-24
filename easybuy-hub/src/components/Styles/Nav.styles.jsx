@@ -2,7 +2,14 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
     font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: ${({theme}) => theme.colors.white};
     margin-bottom: 20px;
+    
     .container {
         display: flex;
         padding: 1rem;
@@ -12,7 +19,9 @@ export const StyledNav = styled.nav`
     }
 
     .logo img {
-        width:200px
+        width:250px;
+        max-width: 100%;
+        height: auto;
     }
 
     .menu {
@@ -34,8 +43,10 @@ export const StyledNav = styled.nav`
 
 
     .nav-elements ul a {
-        font-size: 30px;
+        font-size: 32px;
+        font-weight: bold;
         text-decoration: none;
+        color: ${({theme}) => theme.colors.black};
     }
 
     .nav-element ul a.active {
