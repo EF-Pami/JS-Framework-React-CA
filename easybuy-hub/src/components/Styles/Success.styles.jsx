@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-margin: auto;
+margin-bottom: 80px;
 width: 50%;
 text-align: center;
 
