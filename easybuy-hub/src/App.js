@@ -19,7 +19,9 @@ const theme = {
     green: 'rgb(96, 234, 96)',
     limegreen: '#81B622',
     tan: 'rgb(200, 180, 140)',
-    black: 'rgb(0, 0, 0)'
+    black: 'rgb(0, 0, 0)',
+    red: "#ff0000",
+    darkgreen: "#008000"
   }
 }
 

@@ -90,7 +90,26 @@ font-size: 16px;
 font-weight: bold;
 cursor: pointer;
 padding: 10px;
+
+&:hover {
+    background-color: ${({theme}) => theme.colors.darkgreen};
+}
 `;
+
+export const StyledMessage = styled.div`
+position: fixed;
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+background-color: ${({theme}) => theme.colors.blue};
+color: ${({theme}) => theme.colors.white};
+padding: 10p 20px;
+border-radius: 5px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+opacity: ${({ show}) => ( show ? 1 : 0)};
+transition: opacity 0.5s ease-in-out;
+z-index: 1000;
+`
 
 export const ProductsView = styled(Link)`
 border-radius: 6px;
@@ -102,4 +121,8 @@ font-size: 16px;
 font-weight: bold;
 cursor: pointer;
 padding: 10px;
+
+&:hover {
+    background-color: ${({theme}) => theme.colors.tan};
+}
 `

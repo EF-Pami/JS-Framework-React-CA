@@ -47,10 +47,13 @@ export const StyledNav = styled.nav`
         font-weight: bold;
         text-decoration: none;
         color: ${({theme}) => theme.colors.black};
+        &:hover {
+            color: ${({theme}) => theme.colors.red};
+        }
     }
 
     .nav-element ul a.active {
-        color: ${({theme}) => theme.colors.black};
+        color: ${({theme}) => theme.colors.red};
         position: relative;
     }
 
@@ -61,7 +64,7 @@ export const StyledNav = styled.nav`
         left: 0;
         width:100%;
         height: 2px;
-        background-color: ${({theme}) => theme.colors.black};
+        color: ${({theme}) => theme.colors.red};
     }
 
 

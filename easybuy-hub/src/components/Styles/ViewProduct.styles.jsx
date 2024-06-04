@@ -66,7 +66,27 @@ font-weight:bold;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+transition: background-color 0.5s;
+
+&:hover {
+    background-color: ${({theme}) => theme.colors.darkgreen};
+}
 `
+export const StyledMessage = styled.div`
+position: fixed;
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+background-color: ${({theme}) => theme.colors.blue};
+color: ${({theme}) => theme.colors.white};
+padding: 10p 20px;
+border-radius: 5px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+opacity: ${({ show}) => ( show ? 1 : 0)};
+transition: opacity 0.5s ease-in-out;
+z-index: 1000;
+`
+
 export const CalDiscount = styled.div`
 display: flex;
 justify-content: center;

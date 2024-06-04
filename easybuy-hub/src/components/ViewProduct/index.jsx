@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "../Styles/ViewProduct.styles";
 import * as R from "../Styles/ProductReviews.styles";
 import { Rating } from "@mui/material";
@@ -17,6 +17,7 @@ export default function ViewProduct ({product}) {
         rating,
         reviews
     } = product;
+    const [showMessage, setShowMessage] = useState(false);
 
     useEffect(() => {
         document.title = `EasyBuy-Hub | ${title}`;
@@ -25,6 +26,10 @@ export default function ViewProduct ({product}) {
     const {addToCart} = useCart();
     function handleATCBtn() {
         addToCart(product);
+        setShowMessage(true);
+        setTimeout(() => {
+            setShowMessage(false);
+        }, 5000);
     }
     const discount = price !== discountedPrice &&
         Math.trunc((100* (price - discountedPrice) / price));
@@ -67,6 +72,7 @@ return (
                 <ProductReviews reviews={reviews} />
             </R.StyledProductReviews>
         </S.StyledContainer>
+        {showMessage && <S.StyledMessage>Item added to cart</S.StyledMessage>}
     </S.StyledViewProduct>
 )
 }

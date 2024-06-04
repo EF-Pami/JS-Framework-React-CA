@@ -13,31 +13,34 @@ margin-bottom: 80px;
 export const StyledContainer = styled.div`
 display: flex;
 flex-direction: column;
+align-items: center;
 
 @media (max-width: 465px) {
-    width:450px;
-    height: 100px;
+    width:100%;
+    
 }
 `
 export const StyledItem = styled.div`
 display: flex;
 justify-content: center;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 margin: 10px;
 border: 1px solid ${({theme}) => theme.colors.black};
 background-color: ${({theme}) => theme.colors.white};
 border-radius: 2rem;
 padding: 1rem;
+width: 250px;
+box-sizing: border-box;
 
 img {
     width: 100px;
-    height: 120px;
+    height: 200px;
     object-fit: cover;
 }
 
 p {
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 @media (max-width: 465px) {
@@ -45,9 +48,9 @@ p {
     font-size: 14px;
 
     img{
-        width: 50px;
-        height: auto;
-        object-fit: cover;
+        
+        height: 150px;
+        
     }
 }
 `
@@ -84,11 +87,19 @@ border-radius: 10px;
 width: 150px;
 font-size:20px;
 height: 50px;
+
+&:hover {
+    background-color: ${({theme}) => theme.colors.tan};
+}
 `
 export const StyledCheckoutBtn = styled(StyledClearBtn)`
 background-color: ${({theme}) => theme.colors.green};
 color: ${({theme}) => theme.colors.black};
 border: 1px solid ${({theme}) => theme.colors.black};
+
+&:hover {
+    background-color: ${({theme}) => theme.colors.darkgreen};
+}
 `
 export const StyledBackBtn = styled(StyledCheckoutBtn)`
 cursor: pointer;

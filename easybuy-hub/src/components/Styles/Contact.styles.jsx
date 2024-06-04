@@ -53,6 +53,10 @@ form {
         border: none;
         font-weight:bold;
         cursor: pointer;
+
+        &:hover {
+            background-color: ${({theme}) => theme.colors.red};
+        }
     }
 }
 `
