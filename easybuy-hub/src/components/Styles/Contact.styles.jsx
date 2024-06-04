@@ -27,6 +27,7 @@ form {
         height: 36px;
         border: 1px solid ${({theme}) => theme.colors.black};
         border-radius: 20px;
+        padding: 10px;
 
         :focus {
             outline: 1px solid ${({theme}) => theme.colors.black};

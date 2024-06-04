@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
 margin-bottom: 80px;
-width: 50%;
+width: 100%;
 text-align: center;
 
 button {
