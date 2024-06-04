@@ -19,7 +19,7 @@ export const StyledNav = styled.nav`
     }
 
     .logo img {
-        width:250px;
+        width:180px;
         max-width: 100%;
         height: auto;
     }
