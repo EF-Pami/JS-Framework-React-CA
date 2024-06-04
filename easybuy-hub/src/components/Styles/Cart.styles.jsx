@@ -15,7 +15,7 @@ display: flex;
 flex-direction: column;
 
 @media (max-width: 465px) {
-    width:300px;
+    width:450px;
     height: 100px;
 }
 `
@@ -45,7 +45,9 @@ p {
     font-size: 14px;
 
     img{
-        display: none
+        width: 50px;
+        height: auto;
+        object-fit: cover;
     }
 }
 `
