@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const styledWrapper = styled.div`
+export const StyledWrapper = styled.div`
 margin: auto;
 width: 350px;
 
@@ -36,12 +36,20 @@ form {
 
     .body {
         height: 150px;
+        text-align: top;
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
     }
+
+
     p{
         color: red;
         font-size:15px;
         margin: 0;
     }
+
+
     button{
         width: 50%;
         height:30px;
@@ -58,5 +66,11 @@ form {
             background-color: ${({theme}) => theme.colors.red};
         }
     }
+}
+
+.success-message {
+    color: ${({theme}) => theme.colors.black};
+    text-align: center;
+    margin-top: 20px;
 }
 `

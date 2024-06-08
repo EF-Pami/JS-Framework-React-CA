@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
@@ -21,11 +21,12 @@ const schema = yup
         body: yup
             .string()
             .min(3, 'body must 3 characters or higher')
-            .required('Please enter message'),
+            .required('Please enter a message'),
     })
     .required();
 
 export default function ContactForm() {
+    const [showMessage, setShowMessage] = useState(false);
     const {
         register,
         handleSubmit,
@@ -36,27 +37,35 @@ export default function ContactForm() {
     });
 
     function onSubmit() {
+        setShowMessage(true);
         reset();
+        setTimeout(() => setShowMessage(false), 3000);
     }
 
     return (
-        <S.styledWrapper>
+        <S.StyledWrapper>
             <h1>Contact Form</h1>
+            
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>Full Name</label>
                 <input {...register('fullName')} />
                 <p>{errors.fullName?.message}</p>
+
                 <label>Email</label>
                 <input {...register('email')} />
                 <p>{errors.email?.message}</p>
+
                 <label>Subject</label>
                 <input {...register('subject')} />
-                <p>{errors.email?.message}</p>
+                <p>{errors.subject?.message}</p>
+
                 <label>Message</label>
                 <input className="body" {...register('body')} />
                 <p>{errors.body?.message}</p>
+
                 <button type="submit">Submit</button>
             </form>
-        </S.styledWrapper>
+            {showMessage && <p className="success-message">Form submitted successfully!</p>}
+        </S.StyledWrapper>
     )
 }
